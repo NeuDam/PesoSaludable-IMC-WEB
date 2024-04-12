@@ -1,0 +1,87 @@
+section{
+  margin-inline: auto;
+  max-width: 62%;
+  background-color: var(--secondary-color);
+  padding: 8px;
+  border-radius: var(--border-rd-1);
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(1px) saturate(150%);
+  z-index: 20;
+  margin-bottom: 15px;
+  box-shadow:  0 0 10px var(--terciary-color);
+}
+
+button{
+  border: none;
+  border-radius: var(--border-rd-2);
+  padding: 5px;
+  transition: background-color .4s;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: var(--terciary-color);
+}
+
+label, input{
+  font-size: var(--font-sz-3);
+}
+label{
+  margin-bottom: .2em;
+}
+input{
+  margin-bottom: .5em;
+  border: none;
+  border-radius: var(--border-rd-3);
+  outline: 1px solid black;
+  transition: background-color .4s;
+  padding: 3px;
+}
+
+input::-webkit-inner-spin-button{
+  appearance: none;
+}
+
+input:focus{
+  background-color: var(--terciary-color);
+}
+
+article{
+  max-width: 85%;
+  margin-inline: auto;
+  font-size: var(--font-sz-3);
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px){
+  section{
+    max-width: 35%;
+  }
+  article{
+    max-width: 45%
+  };
+}
+
+@media screen and (min-width:1024px) {
+ 
+  section{
+    max-width:24%;
+    scale: 1.2;
+    margin-bottom: 40px;
+  }
+  article{
+    max-width: 35%;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  section{
+    max-width: 18%;
+    scale: 1;
+    margin-bottom: 30px;
+    gap: .2em;
+  }
+  article{
+    max-width: 25%;
+  }
+}

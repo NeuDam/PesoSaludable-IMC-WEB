@@ -1,0 +1,20 @@
+p{
+  width: 100%;
+  text-align: center;
+  border-radius: var(--border-rd-2);
+  padding: 3px;
+}
+
+details{
+  background-color: var(--terciary-color);
+  padding: 10px 5px;
+  border-radius: var(--border-rd-2);
+}
+
+summary{
+  margin-bottom: .5em;
+}
+
+span{
+  margin-bottom: .3em;
+}

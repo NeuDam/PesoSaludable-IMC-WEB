@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --background-color: #ddedff;
+  --primary-color: #00ABE4;
+  --secondary-color: rgba(102, 179, 255, 0.744);
+  --terciary-color: rgb(226, 252, 254);
+  --font-web: "DM Mono", monospace;
+  --font-sz-1: 32px;
+  --font-sz-2: 24px;
+  --font-sz-3: 16px;
+  --font-sz-4: 11px;
+  --border-rd-1: 16px;
+  --border-rd-2: 8px;
+  --border-rd-3: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-web);
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}

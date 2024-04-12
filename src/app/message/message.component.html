@@ -1,0 +1,17 @@
+<p style="background-color: {{data.color}}">{{data.text}}</p>
+<details>
+  <summary>Más datos, recomendaciones</summary>
+  <span>Su IMC: <b>{{data.score}}</b></span>
+  <br />
+  @if (data.extra.aumentar == 0 && data.extra.disminuir == 0) {
+    <span>Mantenerse con una buena dieta</span>
+  }
+  @else if (data.extra.aumentar == 0 && data.extra.disminuir != 0) {
+    <span>Usted debería disminuir <b>{{data.extra.disminuir}}</b> KG</span>
+  }
+  @else {
+    <span>Usted debería aumentar <b>{{data.extra.aumentar}}</b> KG</span>
+  }
+  <br />
+  <span>GOAL: <b>{{data.extra.goal}}</b> KG 🏁</span>
+</details>
