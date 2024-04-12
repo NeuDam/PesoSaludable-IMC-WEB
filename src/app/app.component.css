@@ -16,6 +16,7 @@ h1{
 
 img{
   max-width: 100%;
+  width:150px;
   position: absolute;
   bottom: 5%;
   left: 50%;
